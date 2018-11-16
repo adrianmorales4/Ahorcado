@@ -1,0 +1,223 @@
+body{
+	color:black !important;
+	background-color:#EEEEEE!important;
+}
+form{
+	margin-bottom:0px;
+	text-align: center;
+}
+@font-face{
+    font-family:StencilGothic;
+    src:url(../fonts/StencilGothic.ttf);
+}
+@font-face{
+    font-family:franklinMedium;
+    src:url(../fonts/franklinMedium.ttf);
+}
+@font-face{
+    font-family:cop;
+    src:url(../fonts/COPRGTL.TTF);
+}
+/*-------------------CABECERA------------------*/
+nav.cabecera{
+	color:white !important;
+	background-color:black !important;
+}
+span.titulo{
+	font-size: 180px;
+	font-family:StencilGothic; 
+}
+
+/*--------------------VICTORIA------------------*/
+div.victoriaDerrota{
+	margin-top:80px;
+}
+div.victoriaDerrota span.titulovictoriaDerrota{
+	font-family: franklinMedium;
+	font-size: 95px;
+}
+div.victoriaDerrota button{
+	margin-top:30px;
+	background-color: #1A1A1A;
+	color:white;
+	border-radius: 12px;
+	font-size: 30px;
+}
+div.victoriaDerrota button:hover{
+	background-color: black;
+	color:white;
+}
+div.contenedor{
+	background-color:white;
+	margin-top:-20px;
+
+}
+/*----------HORCA Y LETRAS INTRODUCIDAS---------*/
+img{
+	width:120px;
+	margin-top:-72px;
+	margin-left:111px
+}
+div.infoUsuario{
+	padding-top: 40px;
+	text-align: left;
+	font-size:30px;
+	margin-left:-40px;
+}
+div.textoInfoUsuario{
+	background-image: linear-gradient(#D5D5D5, #EFEFEF);
+	border:4px solid #D6B600;
+	border-radius: 18px;
+	box-shadow: 6px 7px 6px #888888;
+	padding-left: 30px;
+	padding-top: 30px;
+	padding-bottom:30px;
+	margin-left: 260px;
+	font-family: franklinMedium;
+}
+div.textoInfoUsuario img{
+	width: 20px;
+	margin-top:-4px;
+	margin-left: 0px;
+
+}
+
+/*-------LETRAS DE LA PALABRA SELECCIONADA-------*/
+div.letras{
+	margin-top:70px;
+	font-size: 110px;
+	color:black;
+}
+
+div.letraAcertada{
+	width: 105px;
+	height: 115px;
+	text-align: center;
+	display: inline-block;
+	background-color: #E1E1E1;
+	border:2px solid black;
+	border-radius: 8px;
+	box-shadow: 4px 5px 6px #888888;
+	user-select: none;
+}
+
+div.letraNoAcertada{
+	width: 105px;
+	height: 115px;
+	text-align: center;
+	display: inline-block;
+	background: white;
+	border:2px solid black;
+	border-radius: 8px;
+	box-shadow: 4px 5px 6px #888888;
+	transition: background 1.5s;
+	user-select: none;
+}
+div.letraAcertada,div.letraNoAcertada span{
+	font-family: cop; 
+	font-weight: 700;
+	line-height: 110px;
+}
+/*---------------------BUSCAR LETRA---------------*/
+div.buscarLetra{
+	font-family: franklinMedium;
+	margin-top:40px;
+	font-size: 55px;
+	
+}
+div.buscarLetra input{
+	margin-left:20px;
+}
+div.buscarLetra button{
+	width: 150px;
+	height: 80px;
+	margin-left: 80px;
+	margin-bottom:10px;
+	border-radius: 12px;
+}
+div.buscarLetra button span{
+	font-size: 75px;
+	line-height: 50px;
+}
+
+
+/*------------------MEDIA QUERIES-------------------*/
+/* MD */
+@media (min-width: 992px) and (max-width: 1199px){
+	span.titulo{
+		font-size: 120px;
+	}
+
+	img{
+		width: 80px;
+		margin-top:-49px;
+		margin-left:202px
+	}
+	div.infoUsuario {
+	    font-size: 20px;
+	}
+	div.letraAcertada{
+		width: 85px;
+		height: 95px;
+	}
+	div.letraNoAcertada{
+		width: 85px;
+		height: 95px;
+	}
+
+	div.letraAcertada,div.letraNoAcertada span{
+		line-height: 70px;
+	}
+	div.buscarLetra {
+	    margin-top: 30px;
+	    font-size: 45px;
+	}
+}
+
+@media (max-width: 768px){
+	span.titulo{
+		font-size: 50px;
+	}
+	img{
+		width: 50px;
+		margin-top:-24px;
+		margin-left:-185px
+	}
+	div.infoUsuario {
+	    margin-left:-25px;
+	}
+	div.textoInfoUsuario {
+		font-size: 20px;
+	    margin-left: 50px;
+	}
+	div.letras {
+	    font-size: 30px;
+	}
+	div.letraAcertada{
+		width: 33px;
+		height: 43px;
+	}
+	div.letraNoAcertada{
+		width: 33px;
+		height: 43px;
+	}
+
+	div.letraAcertada,div.letraNoAcertada span{
+		line-height: 40px;
+	}
+	div.buscarLetra {
+	    margin-top: 30px;
+	    font-size: 25px;
+	}
+	div.buscarLetra button{
+		width: 120px;
+		height: 50px;
+		margin-left: 80px;
+		margin-bottom:10px;
+		border-radius: 12px;
+	}
+	div.buscarLetra button span{
+		font-size: 25px;
+		line-height: 30px;
+	}	
+}
